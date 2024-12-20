@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
-import "./i18"; // Подключение настроек i18n
+import "./components/i18";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 

@@ -10,6 +10,7 @@ declare module 'i18next' {
           iam: string;
           titles: string;
         };
+        menu: string,
         languege:{
           russion: string,
           english: string,

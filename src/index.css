@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +14,7 @@
 .neon-texts {
   text-shadow: 0 0 10px rgba(2, 101, 30, 0.7), 0 0 10px rgba(9, 120, 40, 0.7);
 
+  border-bottom: 2px solid rgb(0, 255, 72);
   /* Webkit specific styles for neon effect */
   -webkit-text-fill-color: transparent; /* Makes the text transparent so the gradient shows */
   -webkit-background-clip: text; /* Clips the background to the text shape */
@@ -20,6 +22,9 @@
 }
 @layer components {
   .text-clip {
-    @apply font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-700 relative;
+    @apply font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#eee] to-green-700 relative;
+  }
+  .text{
+    @apply  bg-gradient-to-r from-[#00ef34] via-[#6ecd6e] to-[#2bff00] text-transparent bg-clip-text
   }
 }
