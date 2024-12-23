@@ -5,12 +5,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { setActiveIndex } from "../redux/slice";
 import { forheder } from "../types/type";
 
-const Header = ({isSidebarOpen, setSidebarOpen}:forheder) => {
+const Header = ({isSidebarOpen, setSidebarOpen, setOpens}:forheder) => {
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState<boolean>(true);
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng); // Смена языка
     setOpen(!open);
+    setOpens()
+
   };
 
   const dispatch = useDispatch();
@@ -23,7 +25,7 @@ const Header = ({isSidebarOpen, setSidebarOpen}:forheder) => {
 
   return (
     <div onClick={(e) => e.stopPropagation()} className="relative">
-      <header className="w-full bg-gradient-to-b from-[#21992d97] to-[#b1b0b000] mb-10 container mx-auto fixed px-5  text-white">
+      <header className="w-full bg-gradient-to-b z-50 from-[#316837a2] to-[#225b2afc] mb-10 container mx-auto fixed px-5  text-white">
         <nav className="flex items-center py-4 px-2  justify-between">
           <div>
             <h1 className="items-center flex">

@@ -16,7 +16,25 @@ declare module 'i18next' {
           english: string,
           tajik: string,
         }
-        about: string;
+        skills: {
+          react:{
+            rt:string,
+            rt2:string
+          };
+          javascript:{js:string};
+          typescript:{
+            ts:string
+          };
+          redux:{
+            rd:string
+          };
+          git:{
+            gt:string
+          };
+          html:{
+            htmls:string
+          };
+        };
         header: {
           hello: string;
           skills: string;

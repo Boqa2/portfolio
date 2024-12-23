@@ -9,7 +9,27 @@
         "english":"English",
         "tajik":"Tajik"
     },
-    "about": "",
+    "skills": {
+        "react": {
+            "rt":  "Confident in working with the React library:",
+            "rt2":  "I develop and structure components using functional and class approaches. I use hooks (useState, useEffect, useMemo, useReducer and others) to manage the state and life cycle of components. I integrate third-party libraries (React Hook Form, React Slick, React Router and others). I customize interaction components with the server using Axios or Fetch API."
+        },
+        "javascript":{
+            "js":"I have a strong knowledge of the basics of the language: ES6+ (arrow functions, destructuring, promises, async/await). I understand and apply the concepts of OOP and functional programming. I work with DOM, events, AJAX requests. I have experience with JavaScript to configure interaction with the API." 
+        },
+        "typescript": {
+            "ts":"I use TypeScript to type components in React. I work with interfaces, types, generics. I use strong typing to prevent errors at the development stage. I configure projects with TypeScript, including the tsconfig.json configuration."
+        },
+        "redux": {
+            "rd": "I work with Redux Toolkit to simplify state management. I create and connect stores, reducers, actions, selectors. I optimize the application through data memoization (reselect). I implement Redux interaction with asynchronous requests through middleware (Redux Thunk, Redux Saga)."
+        },
+        "git":{
+            "gt": "I am confident in version control tools. I have worked with branches, merging and conflict resolution. I know the basic commands and practices: pull, push, commit, rebase, cherry-pick, stash."
+        },
+        "html":{
+            "htmls": "I create adaptive, cross-browser interfaces. I use modern approaches to layout: Flexbox, Grid Layout. I use preprocessors and frameworks (Tailwind CSS, Bootstrap). I optimize interface performance to speed up page loading."
+        }
+    },
     "header": {
         "hello": "Hello",
         "skills": "Skills",

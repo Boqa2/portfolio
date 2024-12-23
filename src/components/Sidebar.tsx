@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 import { setActiveIndex } from "../redux/slice";
 
-const Sidebar = ({ handleClick }: forClick) => {
+const Sidebar = ({ handleClick, handleClose }: forClick) => {
   const { t } = useTranslation();
 
   const dispatch = useDispatch();
@@ -30,7 +30,7 @@ const Sidebar = ({ handleClick }: forClick) => {
             }`}
             onClick={() => handleItemClick(0)}
           >
-            <a href="#home">{t("header.hello")} </a>
+            <a onClick={handleClose} href="#home">{t("header.hello")} </a>
           </li>
           <li
             className={`text-clip text-lg cursor-pointer ${
@@ -38,7 +38,7 @@ const Sidebar = ({ handleClick }: forClick) => {
             }`}
             onClick={() => handleItemClick(1)}
           >
-            <a href="#skils">{t("header.skills")}</a>
+            <a onClick={handleClose} href="#skils">{t("header.skills")}</a>
           </li>
           <li
             className={`text-clip text-lg cursor-pointer ${
@@ -46,7 +46,7 @@ const Sidebar = ({ handleClick }: forClick) => {
             }`}
             onClick={() => handleItemClick(2)}
           >
-            <a href="#education">{t("header.education")}</a>
+            <a onClick={handleClose} href="#education">{t("header.education")}</a>
           </li>
           <li
             className={`text-clip text-lg cursor-pointer ${
@@ -54,7 +54,7 @@ const Sidebar = ({ handleClick }: forClick) => {
             }`}
             onClick={() => handleItemClick(3)}
           >
-            <a href="#experience">{t("header.experience")}</a>
+            <a onClick={handleClose} href="#experience">{t("header.experience")}</a>
           </li>
           <li
             className={`text-clip text-lg cursor-pointer ${
@@ -62,7 +62,7 @@ const Sidebar = ({ handleClick }: forClick) => {
             }`}
             onClick={() => handleItemClick(4)}
           >
-            <a href="#portfolio"> {t("header.portfolio")}</a>
+            <a onClick={handleClose} href="#portfolio"> {t("header.portfolio")}</a>
           </li>
           <li
             className={`text-clip active:bg-white duration-700 text-lg cursor-pointer ${
@@ -70,7 +70,7 @@ const Sidebar = ({ handleClick }: forClick) => {
             }`}
             onClick={() => handleItemClick(5)}
           >
-            <a href="#conatct">{t("header.contact")}</a>
+            <a onClick={handleClose} href="#conatct">{t("header.contact")}</a>
           </li>
         </ul>
       </div>
