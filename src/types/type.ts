@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface forClick {
     handleClick: (e: React.MouseEvent) => void
     handleClose: (e: React.MouseEvent) => void
@@ -13,3 +15,19 @@ export interface ICard {
     value:number;
     side: "left" | "rigth"
 }
+export interface Item {
+    text: string;
+    month:string;
+    fors:string,
+    edplace:string
+    obou:string,
+}
+export interface button {
+    children: ReactNode
+    className:string
+}
+export interface FormData  {
+    name: string;
+    email: string;
+    message: string;
+  };

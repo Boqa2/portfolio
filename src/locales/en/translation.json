@@ -2,7 +2,7 @@
     "title": "Bakhtovar",
     "welcome": {
         "iam": "I'm Boboev Bakhtovar",
-        "titles": "I am an aspiring front-end developer with a passion for creating modern, interactive, and user-friendly web applications. My development journey began with a deep study of HTML, CSS and JavaScript, which allowed me to build a strong foundation for further work with tools such as React, TypeScript and Redux."
+        "titles": "I'm 20 years old, I'm an aspiring front-end developer with a passion for building modern, interactive, and user-friendly web applications. My development journey began with an in-depth study of HTML, CSS, and JavaScript, which allowed me to build solid foundations for further work with tools such as React, TypeScript, and Redux."
     },
     "languege": {
         "russion":"Russion",
@@ -46,5 +46,28 @@
             "in": "Tajikistan/Dushanbe"
         },
         "social": "Social"
+    },
+    "javascript": {
+        "edplace":"Ilmhona – Training Center",
+        "month": "June 2024 – August 2024",
+        "obou":"Learn the basics of JavaScript, including:",
+        "for": "Variables, functions, loops and conditions. Working with DOM and events. Asynchronous programming: Promises, async/await.Basics of working with REST API."
+    },
+    "portfo":"Here are my React projects !",
+    "kurs":"Courses:",
+    "react": {
+        "edplace":"Ilmhona – Training Center",
+        "month": "August 2024 – December 2024",
+        "obou":"Mastering React for user interface development:",
+        "for": "Creating components and using JSX. State management using hooks (useState, useEffect). Routing Basics (React Router). Working with external APIs, Axios. Introduction to state management with Redux."
+    },
+    "resume": "Resume",
+    "errors":{
+        "er":"Enter your name",
+        "koremail":"Enter a correct email",
+        "emailer":"Enter your email",
+        "messege": "Enter your message",
+        "but": "Send"
     }
+
 }

@@ -3,24 +3,24 @@ import Card from "../components/Card";
 import { Typewriter } from "react-simple-typewriter";
 
 const SecSkills = () => {
-  const { t } = useTranslation();
-  return (
+    const { t } = useTranslation();
+    return (
     <section id="skills" className="h-full  space-y-10 border-green-700 pt-16">
       <div className="h-full">
         <div className="space-y-3 w-full h-full">
           <div>
-            <h1 className="text-2xl font-extrabold bg-gradient-to-r from-[#00ef34] via-[#258425] to-[#fafff9] text-transparent bg-clip-text">
+            <h1 className="text-3xl my-2 mb-6 text-center font-extrabold text-white">
               <Typewriter
-                          words={[t("header.skills")]}
-                          cursor
-                          cursorStyle="I"
-                          typeSpeed={100}
-                          deleteSpeed={100}
-                        />
+                words={[t("header.skills")]}
+                cursor
+                cursorStyle="I"
+                typeSpeed={100}
+                deleteSpeed={100}
+              />
             </h1>
           </div>
-          <div className="flex flex-col h-full gap-4 relative items-center">
-            <div className="absolute w-1 shadow-[0_0_15px_5px_rgba(0,255,100,0.8),0_0_30px_10px_rgba(0,255,100,0.5)] bg-green-500 rounded-sm h-full left-1/2 transform -translate-x-1/2"></div>
+          <div className="flex flex-col h-full gap-1 relative items-center">
+            <div className="absolute w-1 shadow-[0_0_15px_5px_rgba(0,255,100,0.8),0_0_30px_10px_rgba(0,255,100,0.5)] bg-green-500 rounded-sm h-full md:left-1/2 left-[14px] transform -translate-x-1/2"></div>
             <Card
               side="left"
               text="React"

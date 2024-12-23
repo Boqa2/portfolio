@@ -10,12 +10,34 @@ declare module 'i18next' {
           iam: string;
           titles: string;
         };
+        javascript: {
+          edplace:string;
+          month: string;
+          obou:string;
+          for:string
+        };
+        errors:{
+          er:string
+          koremail:string
+          emailer:string
+          messege:string
+          but:string
+        }
+        portfo:string
+        kurs: string;
+        react: {
+          edplace:string;
+          month: string;
+          obou:string;
+          for:string
+        }
         menu: string,
         languege:{
           russion: string,
           english: string,
           tajik: string,
         }
+        resume:string
         skills: {
           react:{
             rt:string,

@@ -28,12 +28,15 @@
     @apply  bg-gradient-to-r from-[#00ef34] via-[#6ecd6e] to-[#2bff00] text-transparent bg-clip-text
   }
   .clik{
-    @apply text-wrap bg-green-500 rounded-[35px] p-5 w-1/2 font-poppins shadow-[0_0_15px_5px_rgba(0,255,100,0.8),0_0_30px_10px_rgba(0,255,100,0.5)]
+    @apply text-wrap bg-green-500 rounded-[35px] p-5 md:w-1/2 w-full font-poppins shadow-[0_0_15px_5px_rgba(0,255,100,0.8),0_0_30px_10px_rgba(0,255,100,0.5)]
   }
   .neon{
     @apply bg-green-400 w-7 h-7 rounded-full shadow-[0_0_15px_5px_rgba(0,255,100,0.8),0_0_30px_10px_rgba(0,255,100,0.5)]
   }
   .line{
     @apply w-full h-1 bg-green-500 rounded-sm shadow-[0_0_15px_5px_rgba(0,255,100,0.8),0_0_30px_10px_rgba(0,255,100,0.5)]
+  }
+  .neons{
+    @apply shadow-[0_0_15px_5px_rgba(0,255,100,0.8),0_0_30px_10px_rgba(0,255,100,0.5)]
   }
 }
