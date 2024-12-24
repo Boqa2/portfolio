@@ -76,7 +76,7 @@ const Header = ({isSidebarOpen, setSidebarOpen, setOpens}:forheder) => {
                 <a href="#portfolio"> {t("header.portfolio")}</a>
               </li>
               <li
-                className={`text-white active:bg-white duration-700 text-lg cursor-pointer ${
+                className={`text-white text-lg cursor-pointer ${
                   activeIndex === 5 ? "underline font-bold" : ""
                 }`}
                 onClick={() => handleItemClick(5)}

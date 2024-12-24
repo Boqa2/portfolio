@@ -35,11 +35,14 @@ const SecHello = ({ open, pdf }: proop) => {
                 deleteSpeed={0}
               />
             </p>
-            <Button className="bg-green-950">
-              <a target="_blank" href={pdf}>
-                {t("resume")}
-              </a>
-            </Button>
+            <div className="flex flex-col md:flex-row  gap-3">
+              <Button className="bg-green-950">
+                <a target="_blank" href={pdf}>
+                  {t("resume")}
+                </a>
+              </Button>
+              <Button className="bg-green-950">{t("header.contact")}</Button>
+            </div>
           </div>
           <div className="md:w-2/3 w-full font-semibold text-white ">
             <ul className="grid bottom-0 gap-3  ">
