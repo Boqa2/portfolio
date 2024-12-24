@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Video from "../public/rrrrrr.mp4";
 import Sidebar from "./components/Sidebar";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import React from "react";
 import Foto from "../public/image.png";
 import SecHello from "./pages/SecHello";
@@ -10,16 +10,37 @@ import SecSkills from "./pages/SecSkills";
 import SecEduct from "./pages/SecEduct";
 import SecPortfo from "./pages/SecPortfo";
 import SecConts from "./pages/SecConts";
-import pdf from "./components/Бобоев Бахтовар.pdf"
+import pdf from "./components/Бобоев Бахтовар.pdf";
 
 export default function App() {
   const [isSidebarOpen, setSidebarOpen] = useState<boolean>(false);
   const [isOpen, setOpen] = useState<boolean>(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.play().catch(() => {
+        // Попробуйте запустить позже, если автозапуск не удался
+        console.log(
+          "Видео не смогло автозапуститься, возможно, требуется взаимодействие пользователя."
+        );
+      });
+    }
+  }, []);
   return (
     <div onClick={() => setSidebarOpen(false)}>
       <div className="container mx-auto w-full h-full">
         <div className="fixed top-0  left-0 w-full h-full -z-10">
-          <video className="w-full h-full object-cover" autoPlay loop muted>
+          <video
+            className="w-full h-full object-cover"
+            autoPlay
+            ref={videoRef}
+            controls={false}
+            playsInline
+            loop
+            muted
+          >
             <source src={Video} type="video/mp4" />
             Ваш браузер не поддерживает тег видео.
           </video>
