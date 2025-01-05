@@ -14,7 +14,7 @@ const SecHello = ({ open, pdf }: proop) => {
         id="home"
         className="w-full grid  bg-green-500 grid-cols-1 shadow-[0_0_15px_5px_rgba(0,255,100,0.8),0_0_30px_10px_rgba(0,255,100,0.5)] lg:grid-cols-2 p-7 rounded-2xl bg-opacity-50"
       >
-        <div className="flex flex-col gap-3">
+        <div className="flex order-1 md:order-none flex-col gap-3">
           <h1 className="md:text-4xl text-3xl font-extrabold text-white text-transparent bg-clip-text">
             <Typewriter
               words={[t("welcome.iam")]}
@@ -88,7 +88,11 @@ const SecHello = ({ open, pdf }: proop) => {
             </ul>
           </div>
         </div>
-        <div></div>
+        <div className="flex w-full h-full md:order-1 order-0  rounded-full overflow-hidden justify-center items-center">
+          <div className="w-3/4 overflow-hidden  rounded-full">
+            <img className="duration-500 rounded-full w-full hover:scale-125 h-full" src="myPhoto.jpg" alt="" />
+          </div>
+        </div>
       </section>
       <div className="line"></div>
     </div>
