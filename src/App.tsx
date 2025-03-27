@@ -5,6 +5,9 @@ import Sidebar from "./components/Sidebar";
 import { useEffect, useRef, useState } from "react";
 import React from "react";
 import Foto from "../public/image.png";
+import Foto1 from "../public/sonic.png";
+import Foto2 from "../public/drop.png";
+import Foto3 from "../public/pizza.png";
 import SecHello from "./pages/SecHello";
 import SecSkills from "./pages/SecSkills";
 import SecEduct from "./pages/SecEduct";
@@ -55,7 +58,7 @@ export default function App() {
             <SecHello pdf={pdf} open={isOpen} />
             <SecSkills />
             <SecEduct />
-            <SecPortfo foto={Foto} />
+            <SecPortfo foto={Foto} foto1={Foto1} foto2={Foto2} foto3={Foto3} />
             <SecConts />
           </div>
         </div>

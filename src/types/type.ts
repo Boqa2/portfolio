@@ -10,24 +10,31 @@ export interface forheder {
     setOpens: () => void
 }
 export interface ICard {
-    text:string;
-    description:string;
-    value:number;
+    text: string;
+    description: string;
+    value: number;
     side: "left" | "rigth"
 }
 export interface Item {
     text: string;
-    month:string;
-    fors:string,
-    edplace:string
-    obou:string,
+    month: string;
+    fors: string,
+    edplace: string
+    obou: string,
 }
 export interface button {
     children: ReactNode
-    className:string
+    className: string
 }
-export interface FormData  {
+export interface FormData {
     name: string;
     email: string;
     message: string;
-  };
+};
+
+export interface ForFoto {
+    foto: string;
+    foto1: string;
+    foto2: string;
+    foto3:string;
+}
