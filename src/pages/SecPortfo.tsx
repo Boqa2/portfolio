@@ -11,7 +11,9 @@ const SecPortfo = ({
   foto5,
   foto6,
   foto7,
-  foto8
+  foto8,
+  foto9,
+  foto10
 }: ForFoto) => {
   const { t } = useTranslation();
   return (
@@ -127,6 +129,30 @@ const SecPortfo = ({
               <img className="rounded-xl" src={foto8} alt="" />
               <p className="text-lg font-poppins my-3 font-bold">
                 Xl Energy
+              </p>
+            </a>
+          </div>
+          <div className="border neons duration-500 hover:scale-105 bg-green-400 bg-opacity-55 rounded-xl border-green-500 p-3">
+            <a
+              target="_blank"
+              className="rounded-3xl"
+              href="https://boqa2.github.io/morton-build/"
+            >
+              <img className="rounded-xl" src={foto9} alt="" />
+              <p className="text-lg font-poppins my-3 font-bold">
+                Morton Buildings
+              </p>
+            </a>
+          </div>
+          <div className="border neons duration-500 hover:scale-105 bg-green-400 bg-opacity-55 rounded-xl border-green-500 p-3">
+            <a
+              target="_blank"
+              className="rounded-3xl"
+              href="https://boqa2.github.io/tests/"
+            >
+              <img className="rounded-xl" src={foto10} alt="" />
+              <p className="text-lg font-poppins my-3 font-bold">
+                Explorer Waterloo
               </p>
             </a>
           </div>

@@ -13,6 +13,8 @@ import Foto5 from "../public/capitancrunch.png";
 import Foto6 from "../public/monopol.png";
 import Foto7 from "../public/scrath.png";
 import Foto8 from "../public/xcelener.png";
+import Foto9 from "../public/morton.png";
+import Foto10 from "../public/vaterloo.png";
 import SecHello from "./pages/SecHello";
 import SecSkills from "./pages/SecSkills";
 import SecEduct from "./pages/SecEduct";
@@ -73,6 +75,8 @@ export default function App() {
               foto6={Foto6}
               foto7={Foto7}
               foto8={Foto8}
+              foto9={Foto9}
+              foto10={Foto10}
             />
             <SecConts />
           </div>
