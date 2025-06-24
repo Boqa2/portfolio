@@ -2,7 +2,17 @@ import { useTranslation } from "react-i18next";
 import { Typewriter } from "react-simple-typewriter";
 import { ForFoto } from "../types/type";
 
-const SecPortfo = ({ foto, foto1, foto2, foto3 }: ForFoto) => {
+const SecPortfo = ({
+  foto,
+  foto1,
+  foto2,
+  foto3,
+  foto4,
+  foto5,
+  foto6,
+  foto7,
+  foto8
+}: ForFoto) => {
   const { t } = useTranslation();
   return (
     <div className="space-y-4">
@@ -60,6 +70,64 @@ const SecPortfo = ({ foto, foto1, foto2, foto3 }: ForFoto) => {
             >
               <img className="rounded-xl" src={foto3} alt="" />
               <p className="text-lg font-poppins my-3 font-bold">React Pizza</p>
+            </a>
+          </div>
+          <div className="border neons duration-500 hover:scale-105 bg-green-400 bg-opacity-55 rounded-xl border-green-500 p-3">
+            <a
+              target="_blank"
+              className="rounded-3xl"
+              href="https://boqa2.github.io/fines-and-ferb/"
+            >
+              <img className="rounded-xl" src={foto4} alt="" />
+              <p className="text-lg font-poppins my-3 font-bold">
+                Phines and Ferb
+              </p>
+            </a>
+          </div>
+          <div className="border neons duration-500 hover:scale-105 bg-green-400 bg-opacity-55 rounded-xl border-green-500 p-3">
+            <a
+              target="_blank"
+              className="rounded-3xl"
+              href="https://boqa2.github.io/capn-t-crunch/"
+            >
+              <img className="rounded-xl" src={foto5} alt="" />
+              <p className="text-lg font-poppins my-3 font-bold">
+                Capitan Crunch
+              </p>
+            </a>
+          </div>
+          <div className="border neons duration-500 hover:scale-105 bg-green-400 bg-opacity-55 rounded-xl border-green-500 p-3">
+            <a
+              target="_blank"
+              className="rounded-3xl"
+              href="https://boqa2.github.io/capn-t-crunch/"
+            >
+              <img className="rounded-xl" src={foto6} alt="" />
+              <p className="text-lg font-poppins my-3 font-bold">MonoPoly</p>
+            </a>
+          </div>
+          <div className="border neons duration-500 hover:scale-105 bg-green-400 bg-opacity-55 rounded-xl border-green-500 p-3">
+            <a
+              target="_blank"
+              className="rounded-3xl"
+              href="https://boqa2.github.io/capn-t-crunch/"
+            >
+              <img className="rounded-xl" src={foto7} alt="" />
+              <p className="text-lg font-poppins my-3 font-bold">
+                Scratch Away
+              </p>
+            </a>
+          </div>
+          <div className="border neons duration-500 hover:scale-105 bg-green-400 bg-opacity-55 rounded-xl border-green-500 p-3">
+            <a
+              target="_blank"
+              className="rounded-3xl"
+              href="https://boqa2.github.io/xl-energy-game/"
+            >
+              <img className="rounded-xl" src={foto8} alt="" />
+              <p className="text-lg font-poppins my-3 font-bold">
+                Xl Energy
+              </p>
             </a>
           </div>
         </div>

@@ -8,6 +8,11 @@ import Foto from "../public/image.png";
 import Foto1 from "../public/sonic.png";
 import Foto2 from "../public/drop.png";
 import Foto3 from "../public/pizza.png";
+import Foto4 from "../public/finesferb.png";
+import Foto5 from "../public/capitancrunch.png";
+import Foto6 from "../public/monopol.png";
+import Foto7 from "../public/scrath.png";
+import Foto8 from "../public/xcelener.png";
 import SecHello from "./pages/SecHello";
 import SecSkills from "./pages/SecSkills";
 import SecEduct from "./pages/SecEduct";
@@ -58,7 +63,17 @@ export default function App() {
             <SecHello pdf={pdf} open={isOpen} />
             <SecSkills />
             <SecEduct />
-            <SecPortfo foto={Foto} foto1={Foto1} foto2={Foto2} foto3={Foto3} />
+            <SecPortfo
+              foto={Foto}
+              foto1={Foto1}
+              foto2={Foto2}
+              foto3={Foto3}
+              foto4={Foto4}
+              foto5={Foto5}
+              foto6={Foto6}
+              foto7={Foto7}
+              foto8={Foto8}
+            />
             <SecConts />
           </div>
         </div>

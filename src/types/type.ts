@@ -37,4 +37,9 @@ export interface ForFoto {
     foto1: string;
     foto2: string;
     foto3:string;
+    foto4:string;
+    foto5:string;
+    foto6:string;
+    foto7:string;
+    foto8:string;
 }
