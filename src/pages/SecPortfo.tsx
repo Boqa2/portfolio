@@ -13,7 +13,9 @@ const SecPortfo = ({
   foto7,
   foto8,
   foto9,
-  foto10
+  foto10,
+  foto11,
+  foto12
 }: ForFoto) => {
   const { t } = useTranslation();
   return (
@@ -151,6 +153,30 @@ const SecPortfo = ({
               href="https://boqa2.github.io/tests/"
             >
               <img className="rounded-xl" src={foto10} alt="" />
+              <p className="text-lg font-poppins my-3 font-bold">
+                Explorer Waterloo
+              </p>
+            </a>
+          </div>
+          <div className="border neons duration-500 hover:scale-105 bg-green-400 bg-opacity-55 rounded-xl border-green-500 p-3">
+            <a
+              target="_blank"
+              className="rounded-3xl"
+              href="https://baxtovarshoh.github.io/nacdonalds-game/"
+            >
+              <img className="rounded-xl" src={foto11} alt="" />
+              <p className="text-lg font-poppins my-3 font-bold">
+                Explorer Waterloo
+              </p>
+            </a>
+          </div>
+          <div className="border neons duration-500 hover:scale-105 bg-green-400 bg-opacity-55 rounded-xl border-green-500 p-3">
+            <a
+              target="_blank"
+              className="rounded-3xl"
+              href="https://t.me/Nazorat_Hisob_bot."
+            >
+              <img className="rounded-xl" src={foto12} alt="" />
               <p className="text-lg font-poppins my-3 font-bold">
                 Explorer Waterloo
               </p>

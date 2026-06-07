@@ -15,12 +15,14 @@ import Foto7 from "../public/scrath.png";
 import Foto8 from "../public/xcelener.png";
 import Foto9 from "../public/morton.png";
 import Foto10 from "../public/vaterloo.png";
+import Foto11 from "../public/macdonalds.png";
+import Foto12 from "../public/tg-bot.png";
 import SecHello from "./pages/SecHello";
 import SecSkills from "./pages/SecSkills";
 import SecEduct from "./pages/SecEduct";
 import SecPortfo from "./pages/SecPortfo";
 import SecConts from "./pages/SecConts";
-import pdf from "./components/Бобоев Бахтовар.pdf";
+import pdf from "./components/Boboev baxtovar.pdf";
 
 export default function App() {
   const [isSidebarOpen, setSidebarOpen] = useState<boolean>(false);
@@ -33,7 +35,7 @@ export default function App() {
       video.play().catch(() => {
         // Попробуйте запустить позже, если автозапуск не удался
         console.log(
-          "Видео не смогло автозапуститься, возможно, требуется взаимодействие пользователя."
+          "Видео не смогло автозапуститься, возможно, требуется взаимодействие пользователя.",
         );
       });
     }
@@ -77,6 +79,8 @@ export default function App() {
               foto8={Foto8}
               foto9={Foto9}
               foto10={Foto10}
+              foto11={Foto11}
+              foto12={Foto12}
             />
             <SecConts />
           </div>
