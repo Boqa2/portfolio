@@ -15,7 +15,7 @@ const SecPortfo = ({
   foto9,
   foto10,
   foto11,
-  foto12
+  foto12,
 }: ForFoto) => {
   const { t } = useTranslation();
   return (
@@ -129,9 +129,7 @@ const SecPortfo = ({
               href="https://boqa2.github.io/xl-energy-game/"
             >
               <img className="rounded-xl" src={foto8} alt="" />
-              <p className="text-lg font-poppins my-3 font-bold">
-                Xl Energy
-              </p>
+              <p className="text-lg font-poppins my-3 font-bold">Xl Energy</p>
             </a>
           </div>
           <div className="border neons duration-500 hover:scale-105 bg-green-400 bg-opacity-55 rounded-xl border-green-500 p-3">
@@ -166,7 +164,7 @@ const SecPortfo = ({
             >
               <img className="rounded-xl" src={foto11} alt="" />
               <p className="text-lg font-poppins my-3 font-bold">
-                Explorer Waterloo
+                Macdonald's game
               </p>
             </a>
           </div>
@@ -178,7 +176,7 @@ const SecPortfo = ({
             >
               <img className="rounded-xl" src={foto12} alt="" />
               <p className="text-lg font-poppins my-3 font-bold">
-                Explorer Waterloo
+                Telegram-Bot AI-hisob
               </p>
             </a>
           </div>
